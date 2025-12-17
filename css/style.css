@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* --------- FIM ------------------ */
 
 /* Estilizando o GLOBAL BODY */
 body {
@@ -14,6 +15,103 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
 }
+/* --------- FIM ------------------ */
+
+/* Estlizando o HEADER */
+.header {
+    background: #ffff;
+    border-bottom: 1px solid #eee;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;  
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #0a3cff;
+}
+/* --------- FIM ------------------ */
+
+/* Estilizando  HERO */
+.hero {
+    padding: 90px 0;
+    background: #f5f7ff;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.hero-text {
+    width: 90%;
+}
+/* --------- FIM ------------------ */
+
+/* Estilizando BOTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #0a3cff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #082dbf;
+}
+/* --------- FIM ------------------ */
+
+/* Estilizando SERVICES */
+.services {
+    padding: 60px 0;
+}
+
+.services-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.services-card {
+    padding: 30px;
+    background: #f4f4f4;
+    border-radius: 4px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.1);
+}
+/* --------- FIM ------------------ */
